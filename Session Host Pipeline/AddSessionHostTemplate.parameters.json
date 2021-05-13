@@ -11,78 +11,68 @@
         "tags": {
             "value": {
                 "Environment": "Lab",
-                "Owner": "IT"
+                "Owner": "Ken Tsui"
             }
         },
         "hostpoolName": {
-            "value": "<HostPoolName>"
+            "value": "wvd-host-pool-001"
         },
         "hostpoolToken": {
-            "value": "<HostPoolToken>"
+            "value": ""
         },
         "administratorAccountUsername": {
-            "value": "<DomainJoinAccount>"
+            "value": "domainadmin@gammonaiml.onmicrosoft.com"
         },
         "administratorAccountPassword": {
-            "reference": {
-                "keyVault": {
-                  "id": "<KeyVaultURI>"
-                },
-                "secretName": "<DomainAddSecret>"
-              }
+            "value": ""
         },
         "vmAdministratorAccountUsername": {
-            "value": "<LocalAdmin>"
+            "value": "azureadmin"
         },
         "vmAdministratorAccountPassword": {
-            "reference": {
-                "keyVault": {
-                  "id": "<KeyVaultURI>"
-                },
-                "secretName": "<LocalAdminSecret>"
-              }
+            "value": ""
         },
         "vmSize": {
-            "value": "<VMSize>"
+            "value": "Standard_B2ms"
         },
         "vmInitialNumber": {
             "value": 1
         },
         "vmNumberOfInstances": {
-            "value": 3
+            "value": 1
         },
         "vmNamePrefix": {
-            "value": "<VMPrefix>"
+            "value": "vmwvd"
         },
         "vmImageType": {
             "value": "CustomImage"
         },
         "vmCustomImageSourceId": {
-            "value": "<SIGURI>"
+            "value": "/subscriptions/c1846e32-d865-470b-86fa-daee66cd7830/resourceGroups/rg-wvd-eas-prd-com-01/providers/Microsoft.Compute/galleries/SharedImageGalleryWVD/images/wvd-win10ms/versions/2021.04.14"
         },
         "vmDiskType": {
-            "value": "<DiskType>"
+            "value": "Standard_LRS"
         },
         "existingVnetName": {
-            "value": "<VNetName>"
+            "value": "vnet-wvd-eas-prd-com-01"
         },
         "existingSubnetName": {
-            "value": "<SHSubnet>"
+            "value": "snet-vnet-wvd-eas-prd-com-01-wvd-01"
         },
         "virtualNetworkResourceGroupName": {
-            "value": "<VNetRG>"
+            "value": "rg-wvd-eas-prd-com-01"
         },
         "ouPath": {
-            "value": "<OUPath>"
+            "value": "OU=WVDUsers,DC=gammonaiml,DC=onmicrosoft,DC=com"
         },
         "domain": {
-            "value": "<DomainName>"
+            "value": "gammonaiml.onmicrosoft.com"
         },
         "workspaceId": {
-            "value": "<WorkspaceID>"
+            "value": "6def359f-69ac-4a49-9560-7e326ecfd55f"
         },
         "workspaceKey": {
-            "value": "<WorkspaceKey>"
+            "value": ""
         }
     }
 }
